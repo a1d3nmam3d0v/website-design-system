@@ -1,0 +1,315 @@
+@import url("http://fonts.cdnfonts.com/css/space-mono");
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Wence", sans-serif; */
+    font-size: 16px;
+    height: 100vh;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 1030;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: unset;
+    margin-right: 1rem;
+}
+
+
+
+header,
+h2 {
+    text-align: center;
+    position: sticky;
+    top: 2rem;
+}
+
+h1 {
+    font-size: 8rem;
+    margin: 0;
+    font-family: tarzana-wide, sans-serif;
+    margin-bottom: 5rem;
+    line-height: .8;
+
+}
+
+h2 {
+    font-family: tarzana-narrow, sans-serif;
+    font-size: 3rem;
+
+}
+
+/* COLORS SECTION */
+
+#colors {
+    position: relative;
+    top: 800px;
+}
+
+.swatches {
+    display: flex;
+}
+
+.swatch {
+    width: 20%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bigLetter {
+    margin: 0;
+    padding: 0;
+    font-size: 15vw;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    -webkit-text-stroke: 2px black;
+}
+
+.colorName,
+.colorCode {
+    top: 0;
+    position: sticky;
+    text-align: center;
+}
+
+.colorName {
+    /* top: 40%; */
+    /* bottom: 0; */
+    font-size: 3vw;
+}
+
+.colorCode {
+    /* bottom: 0; */
+    font-size: 4vw;
+}
+
+.color1 {
+    background: #210033;
+    color: white;
+}
+
+.color2 {
+    background: #ff00f2;
+    color: black;
+}
+
+.color3 {
+    background: #f06543;
+    color: white;
+}
+
+.color4 {
+    background: #6262f5;
+    color: black;
+}
+
+.color5 {
+    background: #141b41;
+    color: white;
+}
+
+/* FONTS SECTION */
+
+#fonts {
+    /* position: relative; */
+    /* top: 100px; */
+    height: 1000px;
+    /* background: white; */
+    position: relative;
+    top: 800px;
+}
+
+.fonts-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    line-height: 1;
+}
+
+.fontName {
+    text-decoration: underline solid;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fontSamples {
+    font-size: 1.5rem;
+}
+
+.font1 {
+    font-family: tarzana-narrow, sans-serif;
+}
+
+.font2 {
+    font-family: tarzana-wide, sans-serif;
+}
+
+.font3 {
+    font-family: auger-mono, monospace;
+}
+
+/* light, light italic, regular, italic, bold, bold italic */
+
+.font4 {
+    font-family: gemeli-mono, serif;
+    font-feature-settings: "salt";
+
+    -webkit-font-feature-settings: "salt";
+
+    -o-font-feature-settings: "salt";
+
+    -moz-font-feature-settings: "salt";
+
+    -ms-font-feature-settings: "salt";
+}
+
+.italic {
+    font-style: italic;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.extraLight,
+.ultraLight {
+    font-weight: 200;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular,
+.normal,
+.book {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semiBold,
+.demiBold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extraBold,
+.ultraBold {
+    font-weight: 800;
+}
+
+.heavy,
+.black {
+    font-weight: 900;
+}
+
+.extraBlack,
+.ultraBlack {
+    font-weight: 950;
+}
+
+.border1 {
+    border-style: solid;
+    border-color: #ff00f2;
+    border-width: 5px;
+}
+
+.border2 {
+    border-style: solid;
+    border-color: #f06543;
+    border-width: 5px;
+}
+
+.border3 {
+    border-style: solid;
+    border-color: #6262f5;
+    border-width: 5px;
+}
+
+body {
+    /* background: #20232c; */
+}
+
+/* https://silvawebdesigns.com/create-awesome-animated-scroll-svg-content/ */
+/* https://codepen.io/silvawebdesigns2020/pen/ZEOQzLK */
+/* Scroll Down */
+
+.scrolldown-wrapper {
+    /* left: 50%; */
+    /* position: absolute; */
+    /* text-align: center; */
+    /* bottom: 0; */
+    /* bottom: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.scrolldown {
+    /* border: 2px solid #FFFFFF; */
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 46px;
+    margin: 0 auto 8px;
+    text-align: center;
+    width: 30px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+    animation-duration: 1.5s;
+    animation-name: scrolldown;
+    animation-iteration-count: infinite;
+    /* fill: #FFFFFF; */
+    fill: black;
+}
+
+.scrolldown-p2 {
+    animation-delay: 0.75s;
+}
+
+@keyframes scrolldown {
+    0% {
+        opacity: 0;
+        transform: translate(0, -8px);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 8px);
+    }
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index:100;
+}
